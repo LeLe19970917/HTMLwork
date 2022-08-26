@@ -1,0 +1,78 @@
+body{
+    padding:0px;
+    margin: 0px;
+}
+img{
+   width: 250px;
+  margin: 50px;
+    
+    }
+header{
+    background-image: url(http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg);
+    text-align: center;
+    padding-bottom: 15px;
+    height: 130px;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    color: azure;
+    padding: 15px;
+}
+nav{
+	font-size: 120%;
+}
+nav a{
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.5);
+	width:20%;line-height: 50px;
+}
+a.active{
+  background-color: white
+}
+main{
+    display: flex;
+  }
+.left{
+    width:45%;
+	  margin-right: 2%;
+	  display:inline-block;
+  	background-color: aqua;
+    
+}
+.right{
+    width:120%
+}
+table{
+    width: 900px;
+    border-collapse: collapse;
+    font-weight:bolder;
+}
+td{
+    border: 4px solid white;padding: 10px;
+    background-color: rgb(210, 242, 1,0.8);
+    color: #808080;
+}
+th{
+    border-bottom:  4px solid greenyellow ;
+    border-right: 4px solid white;
+}
+tr:nth-child(1){
+    /* 背景漸層   */
+    background: -webkit-radial-gradient(rgb(22, 237, 61), rgb(210, 242, 1));
+    background: radial-gradient(rgb(22, 237, 61), rgb(210, 242, 1));
+    color: white;
+    font-size: 120%;height: 60px;
+}
+tr:nth-child(2){
+    border-top: 4px solid white;
+}
+th:nth-child(1){
+    text-align: left
+}
+td:nth-child(2){
+    text-align: center
+}
+td:nth-child(3){
+    text-align: center
+}
