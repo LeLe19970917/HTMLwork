@@ -1,0 +1,912 @@
+   /* 重製版面 */
+   *{
+    margin: 0;
+    padding: 0;
+}
+/* 頁面背景、字型 */
+body{
+    background:url('back.webp');
+    background-size: cover;
+    font-family: 'Oxygen', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+/* 導航欄設定 */
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nav-left{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+}
+.nav-left img{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.nav-title{
+    margin: 10px;
+}
+.nav-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color:rgb(34, 51, 68,0.8);
+}
+.nav-center img{
+    width: 45px;
+    height: 45px;
+    filter: brightness(100);
+}
+.nav-right .search{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-top: -38px;
+    margin-right: 150px;
+}
+.nav-right .phone-call{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-top: -38px;
+    margin-right: 110px;
+}
+.nav-right .menu-burger{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-top: -38px;
+    margin-right: 70px;
+}
+.nav-right img{
+    width: 30px;
+    height: 30px;
+}
+/* 內容設定 */
+.row{
+    font-size: 1em;
+}
+/* 左邊對話框 */
+.logo img{
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+    background-color: azure;
+    border-radius: 22.5px;
+}
+.left{
+    margin: 10px 0 10px 10px;
+    display: flex;
+}
+.txt-l{
+    background-color: azure;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 20px;
+}
+.time-l{
+    font-size: 0.9em;
+    color: #43516b;
+    margin-top: 30px;
+}
+/* 右邊對話框 */
+.right{
+    display: flex;
+}
+.time-r{
+    font-size: 0.9em;
+    
+}
+.txt-r{
+    flex: none;
+    width: 48.5%;
+    background-color: #8ee386;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 20px;
+}
+/* 已讀選項設定 */
+.have-read-1r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top: 115px;
+    color: #43516b;
+}
+.have-read-2r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top:92px;
+    color: #43516b;
+}
+.have-read-3r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top: 52px;
+    color: #43516b;
+}
+.have-read-4r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top:32px;
+    color: #43516b;
+}
+.have-read-5r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top: 135px;
+    color: #43516b;
+}
+.have-read-6r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top: 32px;
+    color: #43516b;
+}
+.have-read-7r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top: 70px;
+    color: #43516b;
+}
+.have-read-8r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top: 52px;
+    color: #43516b;
+}
+
+/* 頁尾設定 */
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+.footer-left{
+    position: fixed;
+    width: 32px;
+    height: 32px;
+}
+.footer-left img{
+    width: 32px;
+    height: 32px;
+}
+.footer-left .plus{
+    float: left;
+    margin-left: 30px;
+    margin-top: 1px;
+}
+.footer-left .camera{
+    float: left;
+    margin-left: 80px;
+    margin-top: -31px;
+}
+.footer-left .picture{
+    float: left;
+    margin-left: 135px;
+    margin-top: -32px;
+}
+.footer-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.footer-right{
+    position: fixed;
+    width: 32px;
+    height: 32px;
+}
+.footer-right img{
+    width: 32px;
+    height: 32px;
+}
+.footer-right .microphone{
+    float: right;
+    margin-top: -32px;
+    margin-right: -1050px;
+}
+/* 螢幕尺寸設定 */
+
+@media only screen and (min-width: 1815px) and (max-width: 1920px) {
+/* 已讀選項設定 */
+.have-read-1r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top: 75px;
+    color: #43516b;
+}
+.have-read-2r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top:74px;
+    color: #43516b;
+}
+.have-read-3r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top: 32px;
+    color: #43516b;
+}
+.have-read-4r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top:32px;
+    color: #43516b;
+}
+.have-read-5r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top: 76px;
+    color: #43516b;
+}
+.have-read-6r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top: 32px;
+    color: #43516b;
+}
+.have-read-7r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top: 70px;
+    color: #43516b;
+}
+.have-read-8r{
+    flex: none;
+    width: 48.5%;
+    height: auto;
+    text-align: end;
+    justify-content: flex-start;
+    align-content:flex-end;
+    margin-top: 32px;
+    color: #43516b;
+}
+.footer-right .microphone{
+    float: right;
+    margin-top: -32px;
+    margin-right: -1520px;
+}
+} 
+@media only screen and (min-width: 1631px) and (max-width: 1814px) {
+    /* 已讀選項設定 */
+    .have-read-1r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 75px;
+        color: #43516b;
+    }
+    .have-read-2r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top:74px;
+        color: #43516b;
+    }
+    .have-read-3r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .have-read-4r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top:32px;
+        color: #43516b;
+    }
+    .have-read-5r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 94px;
+        color: #43516b;
+    }
+    .have-read-6r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .have-read-7r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 70px;
+        color: #43516b;
+    }
+    .have-read-8r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .footer-right .microphone{
+        float: right;
+        margin-top: -32px;
+        margin-right: -1350px;
+    }
+    } 
+
+@media only screen and (min-width: 1452px) and (max-width: 1630px) {
+    /* 已讀選項設定 */
+    .have-read-1r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 94px;
+        color: #43516b;
+    }
+    .have-read-2r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top:74px;
+        color: #43516b;
+    }
+    .have-read-3r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .have-read-4r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top:32px;
+        color: #43516b;
+    }
+    .have-read-5r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 94px;
+        color: #43516b;
+    }
+    .have-read-6r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .have-read-7r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 70px;
+        color: #43516b;
+    }
+    .have-read-8r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .footer-right .microphone{
+        float: right;
+        margin-top: -32px;
+        margin-right: -1290px;
+    }
+    } 
+@media only screen and (min-width: 1390px) and (max-width: 1451px) {
+    /* 已讀選項設定 */
+    .have-read-1r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 94px;
+        color: #43516b;
+    }
+    .have-read-2r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top:74px;
+        color: #43516b;
+    }
+    .have-read-3r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .have-read-4r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top:32px;
+        color: #43516b;
+    }
+    .have-read-5r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 115px;
+        color: #43516b;
+    }
+    .have-read-6r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .have-read-7r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 70px;
+        color: #43516b;
+    }
+    .have-read-8r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .footer-right .microphone{
+        float: right;
+        margin-top: -32px;
+        margin-right: -1200px;
+    }
+    } 
+@media only screen and (min-width: 1320px) and (max-width: 1389px) {
+    /* 已讀選項設定 */
+    .have-read-1r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 95px;
+        color: #43516b;
+    }
+    .have-read-2r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top:92px;
+        color: #43516b;
+    }
+    .have-read-3r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .have-read-4r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top:32px;
+        color: #43516b;
+    }
+    .have-read-5r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 115px;
+        color: #43516b;
+    }
+    .have-read-6r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .have-read-7r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 70px;
+        color: #43516b;
+    }
+    .have-read-8r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .footer-right .microphone{
+        float: right;
+        margin-top: -32px;
+        margin-right: -1100px;
+    }
+    } 
+@media only screen and (min-width: 1286px) and (max-width: 1319px) {
+    /* 已讀選項設定 */
+    .have-read-1r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 114px;
+        color: #43516b;
+    }
+    .have-read-2r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top:92px;
+        color: #43516b;
+    }
+    .have-read-3r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .have-read-4r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top:32px;
+        color: #43516b;
+    }
+    .have-read-5r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 115px;
+        color: #43516b;
+    }
+    .have-read-6r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .have-read-7r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 70px;
+        color: #43516b;
+    }
+    .have-read-8r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .footer-right .microphone{
+        float: right;
+        margin-top: -32px;
+        margin-right: -1100px;
+    }
+    } 
+@media only screen and (min-width: 1155px) and (max-width: 1163px) {
+    /* 已讀選項設定 */
+    .have-read-1r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 115px;
+        color: #43516b;
+    }
+    .have-read-2r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top:92px;
+        color: #43516b;
+    }
+    .have-read-3r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 50px;
+        color: #43516b;
+    }
+    .have-read-4r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top:32px;
+        color: #43516b;
+    }
+    .have-read-5r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 135px;
+        color: #43516b;
+    }
+    .have-read-6r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 48px;
+        color: #43516b;
+    }
+    .have-read-7r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 70px;
+        color: #43516b;
+    }
+    .have-read-8r{
+        flex: none;
+        width: 48.5%;
+        height: auto;
+        text-align: end;
+        justify-content: flex-start;
+        align-content:flex-end;
+        margin-top: 32px;
+        color: #43516b;
+    }
+    .footer-right .microphone{
+        float: right;
+        margin-top: -32px;
+        margin-right: -1100px;
+    }
+    } 
+@media screen and (max-width: 1154px){
+
+    .have-read-1r{
+        visibility:hidden;
+    }
+    .have-read-2r{
+        visibility:hidden;
+    }
+    .have-read-3r{
+        visibility:hidden;
+    }
+    .have-read-4r{
+        visibility:hidden;
+    }
+    .have-read-5r{
+        visibility:hidden;
+    }
+    .have-read-6r{
+        visibility:hidden;
+    }
+    .have-read-7r{
+        visibility:hidden;
+    }
+    .have-read-8r{
+        visibility:hidden
+    }
+    .time-l{
+        visibility:hidden
+    }
+    .footer-left img{
+        visibility:hidden;
+    }
+    .footer-right img{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px){
+    .nav-left{
+        display:none
+    }
+    .nav-right{
+        display:none
+    }
+}
